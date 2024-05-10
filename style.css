@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-row {
+  display: flex;
+}
+
+.nav {
+  display: none;
+}
+
+#menu {
+  border: none;
+  background: none;
+}
+
+#close {
+  border: none;
+  background: none;
+}
+
+.nav-active {
+  position: fixed;
+  display: block;
+  height: 100vh;
+  background: #fff;
+}
+
+.nav-active ul {
+  display: flex;
+  flex-direction: column;
+}
+
+#desktop {
+  display: none;
+}
+
+@media screen and (width >= 23.4375rem) {
+  .nav {
+    display: block;
+  }
+  #menu {
+    display: none;
+  }
+  #close {
+    display: none;
+  }
+  #mobile {
+    display: none;
+  }
+  #desktop {
+    display: block;
+  }
+}
