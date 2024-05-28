@@ -10,12 +10,42 @@ body {
   box-sizing: border-box;
 }
 
+main {
+  padding: 1rem;
+}
+
 .nav-row {
   display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.button-row button {
+  flex: 1;
+}
+
+#close {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .nav {
   display: none;
+  max-width: 70%;
+}
+
+.nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+img {
+  max-width: 100%;
 }
 
 #menu {
@@ -30,6 +60,8 @@ body {
 
 .nav-active {
   position: fixed;
+  width: 100%;
+  left: 30%;
   display: block;
   height: 100vh;
   background: #fff;
@@ -44,7 +76,7 @@ body {
   display: none;
 }
 
-@media screen and (width >= 23.4375rem) {
+@media screen and (width >= 35rem) {
   .nav {
     display: block;
   }
