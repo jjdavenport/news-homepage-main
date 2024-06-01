@@ -52,6 +52,7 @@ button:hover {
 }
 
 .nav {
+  border: none;
   display: none;
   flex-direction: column;
   max-width: 70%;
@@ -70,6 +71,7 @@ button:hover {
 }
 
 .nav a {
+  text-decoration: none;
   font-size: 1.4rem;
   font-weight: 400;
   color: hsl(240, 100%, 5%);
@@ -134,6 +136,7 @@ img {
   letter-spacing: 0.25rem;
   font-size: 0.9375rem;
   font-weight: 400;
+  text-decoration: none;
 }
 
 #read-more:hover {
@@ -180,12 +183,14 @@ img {
   color: hsl(35, 77%, 62%);
 }
 
-.middle strong {
+.middle a {
+  text-decoration: none;
   font-size: 1.1rem;
   color: #fff;
+  font-weight: 700;
 }
 
-.middle strong:hover {
+.middle a:hover {
   cursor: pointer;
   color: hsl(35, 77%, 62%);
 }
@@ -225,12 +230,14 @@ img {
   font-weight: 700;
 }
 
-.numbers-text h5 {
+.numbers-text a {
+  color: hsl(240, 100%, 5%);
+  text-decoration: none;
   font-size: 1rem;
   font-weight: 800;
 }
 
-.numbers-text h5:hover {
+.numbers-text a:hover {
   color: hsl(5, 85%, 63%);
   cursor: pointer;
 }
@@ -240,7 +247,7 @@ img {
   color: hsl(236, 13%, 42%);
 }
 
-@media screen and (width >= 75rem) {
+@media screen and (width >= 65rem) {
   body {
     display: grid;
     grid-template-rows: 1fr auto;
@@ -251,6 +258,7 @@ img {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     row-gap: 2rem;
+    padding: 6rem;
   }
   .nav-row {
     grid-row: 1 / 2;
@@ -296,6 +304,7 @@ img {
     padding: 2rem;
     grid-row: 2 / 4;
     grid-column: 3 / 4;
+    min-width: 24rem;
   }
   .middle ul {
     flex: 1;
@@ -307,7 +316,7 @@ img {
   .middle h2 {
     font-size: 3rem;
   }
-  .middle strong {
+  .middle a {
     font-size: 1.6rem;
   }
   .middle P {
@@ -339,12 +348,11 @@ img {
   .numbers-section img {
     height: auto;
   }
-  .numbers-text h5 {
+  .numbers-text a {
     font-size: 1.4rem;
   }
   .numbers-text p {
     font-size: 1.1rem;
-    width: 22ch;
   }
   .top {
     grid-row: 3 / 4;
